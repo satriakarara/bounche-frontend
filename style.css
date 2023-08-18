@@ -769,6 +769,13 @@ body{
     border-radius: 40px;
     background-color: transparent;
     border: solid 1px gray;
+    transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.5s;
+}
+
+.form-wrapper-modal > input:focus {
+    color: #fff;
+    background-color: #050505;
+    border-color: #262626;
 }
 
 .form-wrapper-button{
@@ -791,4 +798,33 @@ body{
 
 .form-wrapper-icon-wrapper{
     display:flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.form-wrapper-icon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #212121;
+    border: 1px solid #2b2b2b;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: border-color .2s,background-color .2s;
+    display: flex;
+    position: relative;
+}
+
+.form-wrapper-icon-wrapper > div {
+    text-align: center;
+    letter-spacing: 0.56px;
+    font-family: "Söhnemono buch", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #ccc;
 }
