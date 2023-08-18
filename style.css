@@ -726,3 +726,69 @@ body{
     text-decoration: none;
     transition: color .2s;
 }
+
+.modal-box{
+    z-index: 1;
+    width: 400px !important;
+    background-color: #171717 !important;
+    border: 1px solid #262626 !important;
+    border-radius: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.modal-text{
+    width: 85%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 0.16px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Söhnemono buch", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.form-wrapper-modal{
+    width: 80%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper-modal > input {
+    width: 100%;
+    height: 56px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 40px;
+    background-color: transparent;
+    border: solid 1px gray;
+}
+
+.form-wrapper-button{
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.16px;
+    background-color: rgb(33, 33, 33);
+    font-family: "Söhnemono kräftig", sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(43, 43, 43);
+    border-image: initial;
+    border-radius: 30px;
+    transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.form-wrapper-icon-wrapper{
+    display:flex;
+}

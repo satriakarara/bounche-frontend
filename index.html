@@ -29,7 +29,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="search">
+        <div class="search" data-toggle="modal" data-target="#exampleModalLong">
         </div>
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1479.9 180">
             <defs>
@@ -305,6 +305,39 @@
             </div>
             <div>
                 Sitemap
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-box">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+                <div class="modal-text">
+                    Quickly find episodes, articles, and pages across the website.
+                </div>
+                <div class="form-wrapper-modal">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button class="form-wrapper-button">
+                    Search
+                </button>
+                <div class="form-wrapper-icon-wrapper">
+                    <div class="form-wrapper-icon">
+                        <img style="width:18px" src="https://global-uploads.webflow.com/5f46baf9863467a01b1aaab9/5f48e96eee96f56ecaa77e0b_popular-white.svg">
+                        Popular
+                    </div>
+                    <div class="form-wrapper-icon">
+                        <img style="width:18px" src="https://global-uploads.webflow.com/5f46baf9863467a01b1aaab9/5f54b4db31df4cefcc660906_latest-posts-white.svg">
+                        Recent
+                    </div>
+                    <div class="form-wrapper-icon">
+                        <img style="width:18px" src="https://global-uploads.webflow.com/5f46baf9863467a01b1aaab9/5f5776bf1f735a4480fcc81f_topics-and-tags-white.svg">
+                        Browse All
+                    </div>
+                </div>
             </div>
         </div>
     </div>
