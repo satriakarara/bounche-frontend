@@ -93,13 +93,13 @@ body{
 .section-1 {
     display: flex;
     width: 100%;
-    
     border-top: 1px solid #1c1c1c;
     padding: 0px 50px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
+    justify-content: center;
 }
 
 .section-1 h1 {
@@ -280,6 +280,7 @@ body{
     width:90%;
     margin-top:25px;
     gap:10px;
+    max-width: 1400px;
 }
 
 .slide-collection{
@@ -409,9 +410,8 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width:90%;
     margin-top:25px;
-    padding: 0px 100px;
     gap:20px;
     max-width: 1400px;
 }
@@ -425,6 +425,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-right:10px;
+    height:168px;
 }
 
 .slide-wrapper-2-icon{
@@ -612,9 +613,9 @@ body{
 .footer{
     background-color: #121212;
     border-top: 1px solid #171717;
-    padding-left: 50px;
-    padding-right: 50px;
     display: flex;
+    width:80%;
+    max-width: 1400px;
 }
 
 .footer-left{
@@ -800,6 +801,9 @@ body{
     display:flex;
     justify-content: center;
     gap:30px;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #1c1c1c;
 }
 
 .form-wrapper-icon{
@@ -828,3 +832,158 @@ body{
     line-height: 22px;
     color: #ccc;
 }
+
+/* mobile */
+
+@media only screen and (max-width: 400px) {
+
+    .header{
+        flex-direction:row-reverse;
+    }
+
+    .header > svg{
+        width:140px;
+    }
+
+    .hamburger > img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background-color: rgba(224,224,224,.08);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        border: 1px solid rgba(255,255,255,.08);
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-1 > div {
+        width:100%;
+    }
+
+    .section-1  h1 {
+        width: 100%;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-top:50px;
+    }
+
+    .section-1 p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom:20px;
+        text-align: center;
+    }
+
+    .section-1-card{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .section-1-card > div > p{
+        text-align: center;
+        margin-bottom: 4px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .section-1-card > div > div {
+        width: 95%;
+        text-align: center;
+        margin-bottom: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 21px;
+    }
+
+    .section-1-button-wrapper{
+        width:100%
+    }
+
+    .section-1-button-start-here{
+        width:100%
+    }
+
+    .section-1-button-listen{
+        width:100%
+    }
+
+    .imgWrapper{
+        margin-top: 50px;
+    }
+
+    .slide-wrapper-2{
+        flex-direction: column;
+    }
+
+    .big-card-wrapper{
+        flex-direction: column;
+    }
+
+    .weekly-summary-title{
+        width: 80%;
+        letter-spacing: 1.6px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .weekly-summary-content{
+        width: 100%;
+        letter-spacing: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .form-wrapper > input{
+        width:80%
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-left{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+    }
+
+    .footer-right{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copyright{
+        flex-direction: column;
+    }
+
+    .copyright > div {
+        text-align: center;
+    }
+
+    .copyright-right{
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .copyright-right > div{
+        margin-left:0;
+    }
+  }

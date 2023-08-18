@@ -1,7 +1,11 @@
 
 
 $(document).ready(function() {
-  console.log('slick jalan')
+  if($(window).width()<500){
+    $(".hideMobile").remove();
+  } else {
+    $(".hideDesktop").remove();
+  }
   let obj = [
     {
       thumbnail:'https://global-uploads.webflow.com/5f46baf9863467a01b1aaab9/5f4e5dd05ef4437b8d583390_volume-white.svg',
@@ -71,11 +75,18 @@ $(document).ready(function() {
 
   $('.slide-wrapper').append(slideContent);
   }
+  if($(window).width()<500){
+    $('.slide-wrapper').slick({
+      prevArrow: null,
+      nextArrow: null
+    });
+  } else {
+    $('.slide-wrapper').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: true,
+    });
+  }
   
-  $('.slide-wrapper').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-  });
 });
